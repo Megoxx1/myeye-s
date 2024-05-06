@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY EYES</title>
+    <title>My Eyes</title>
+    <link rel="stylesheet" href="camerashape.css">
+</head>
 <body>
-    <!-- Square container for the camera feed -->
-<style>
-        /* Style for the square */
-        #camera-square {
-            width: 300px;
-            height: 300px;
-            border: 2px solid green ;
-            margin: 50px auto;
-            position: relative;
-            overflow: hidden;
-
-        }
-
-        /* Style for the video element */
-        #camera-stream {
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    </style>
-    <div id="camera-square">
-        <!-- Video element to display the camera feed -->
-        <video id="camera-stream" autoplay></video>
-    </div>
-
+    <header>
+        <img alt="" width="250" height="250" src="logo.s/MY EYES.png">
+        <nav>
+            <ul>
+                <li><a href="html.html">Home</a></li>
+                <li><a href="login.html">login/signup</a></li>
+                <li><a href="aboutus.html">About Us </a></li>
+                <li><a href="camera.html">360 View</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section id="home">
+            <h2>360 VIEW</h2>
+            <!-- Square container for the camera feed -->
+            <div id="camera-square">
+                <!-- Video element to display the camera feed -->
+                <video id="camera-stream" autoplay></video>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 copy of My Eyes .</p>
+    </footer>
+    
     <!-- JavaScript to access the camera -->
     <script>
         // Get the video element
@@ -44,127 +44,10 @@
                 // Attach the camera stream to the video element
                 video.srcObject = stream;
             })
-            .catch((error
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Camera Button</title>
-</head>
-<body>
-    <button onclick="openCamera()">Open Camera</button>
-
-    <script>
-        function openCamera() {
-            // Check if the browser supports the getUserMedia API
-            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function(stream) {
-                    // Camera access successful, do something with the stream if needed
-                    console.log('Camera access successful');
-                })
-                .catch(function(error) {
-                    // Handle errors
-                    console.error('Error accessing camera:', error);
-                });
-            } else {
-                alert('Sorry, your browser does not support accessing the camera.');
-            }
-        }
+            .catch((error) => {
+                // Handle errors
+                console.error('Error accessing camera:', error);
+            });
     </script>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Eyes</title>
-<link rel="stylesheet" href="shape.css">
-</head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, main, footer {
-            display: block;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-        a:hover {
-            color: #666;
-        }
-    </style>
-<body>
-    <header>
-<img alt="" width="250" height="250" src="logo.s/MY EYES.png">
-        <nav>
-            <ul>
-                <li><a href="html.html">Home</a></li>
-                <li><a href="login.html">login/signup</a></li>
-                <li><a href="aboutus.html">About Us </a></li>
-                <li><a href="camera.html">360 View</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>  
-    </header>
-    <main>
-        <section id="home">
-            <h2>360 VIEW</h2>
-        </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Camera Button</title>
-</head>
-<body>
-    <button onclick="openCamera()">Open Camera</button>
-<script>
- function openCamera() {
-     // Check if the browser supports the getUserMedia API
-            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video: true })
-                .then(function(stream) {
-                    // Camera access successful, do something with the stream if needed
-                    console.log('Camera access successful');
-                })
-                .catch(function(error) {
-                    // Handle errors
-                    console.error('Error accessing camera:', error);
-                });
-            } else {
-                alert('Sorry, your browser does not support accessing the camera.');
-            }
-        }
-    </script>
-</body>
-</html>
-
-    
-    </main>
-    <footer>
-        <p>&copy;2024 copy of My Eyes .</p>
-    </footer>
-</body>
-
-</html>
-
-
